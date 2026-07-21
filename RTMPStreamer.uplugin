@@ -1,0 +1,22 @@
+{
+  "FileVersion": 3,
+  "Version": 100,
+  "VersionName": "0.0.1",
+  "FriendlyName": "RTMP Streamer",
+  "Description": "Lightweight RTMP streaming - Uses FFmpeg to encode a UTextureRenderTarget2D to H.264/FLV and push it to any RTMP endpoint.",
+  "Category": "Media",
+  "CreatedBy": "gaps",
+  "CanContainContent": false,
+  "IsBetaVersion": false,
+  "IsExperimentalVersion": false,
+  "Installed": true,
+  "SupportedTargetPlatforms": [ "Win64" ],
+  "Modules": [
+    {
+      "Name": "RTMPStreamer",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "WhitelistPlatforms": [ "Win64" ]
+    }
+  ]
+}
