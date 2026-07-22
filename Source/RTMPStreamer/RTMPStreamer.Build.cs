@@ -17,6 +17,7 @@ public class RTMPStreamer : ModuleRules
 
         PrivateDependencyModuleNames.AddRange(new string[]
         {
+            "AudioMixer",
             "FFmpeg",
         });
     }

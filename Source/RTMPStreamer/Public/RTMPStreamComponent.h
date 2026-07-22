@@ -50,6 +50,18 @@ public:
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RTMP|Encoding", meta = (ClampMin = "500", ClampMax = "40000"))
     int32 BitRateKbps = 4000;
 
+    /** Audio capture mode: No Audio, Mono, or Stereo. Audio is captured from the engine's main audio submix. */
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RTMP|Audio")
+    ERTMPAudioMode AudioMode = ERTMPAudioMode::None;
+
+    /** Audio sample rate in Hz (ignored when AudioMode is None). */
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RTMP|Audio", meta = (ClampMin = "8000", ClampMax = "48000"))
+    int32 AudioSampleRate = 48000;
+
+    /** Target audio bitrate in kbps (ignored when AudioMode is None). */
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RTMP|Audio", meta = (ClampMin = "32", ClampMax = "320"))
+    int32 AudioBitRateKbps = 128;
+
     /** When true, StartStreaming() is called automatically on BeginPlay. */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RTMP|Connection")
     bool bAutoStart = false;

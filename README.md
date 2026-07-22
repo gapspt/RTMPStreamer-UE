@@ -1,7 +1,7 @@
 # RTMPStreamer
 Lightweight Unreal Engine plugin that allows RTMP streaming directly from the game.
 
-It uses FFmpeg to encode a UTextureRenderTarget2D to H.264/FLV and push it to any RTMP endpoint.
+It uses FFmpeg to encode a UTextureRenderTarget2D and the main sound submix to H.264/AAC FLV and push it to any RTMP endpoint.
 
 
 ## Dependencies

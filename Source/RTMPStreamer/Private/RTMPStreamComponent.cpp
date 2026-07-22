@@ -72,7 +72,8 @@ bool URTMPStreamComponent::StartStreaming() {
     }
 
     Streamer = MakeUnique<FRTMPStreamer>();
-    if (!Streamer->Start(FullUrl, Width, Height, TargetFPS, BitRateKbps)) {
+    if (!Streamer->Start(FullUrl, Width, Height, TargetFPS, BitRateKbps, AudioMode, AudioSampleRate, AudioBitRateKbps,
+        GetWorld())) {
         Streamer.Reset();
         return false;
     }

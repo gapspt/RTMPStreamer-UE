@@ -1,9 +1,9 @@
 {
   "FileVersion": 3,
-  "Version": 100,
-  "VersionName": "0.0.1",
+  "Version": 200,
+  "VersionName": "0.0.2",
   "FriendlyName": "RTMP Streamer",
-  "Description": "Lightweight RTMP streaming - Uses FFmpeg to encode a UTextureRenderTarget2D to H.264/FLV and push it to any RTMP endpoint.",
+  "Description": "Lightweight RTMP streaming - Uses FFmpeg to encode a UTextureRenderTarget2D and the main sound submix to H.264/AAC FLV and push it to any RTMP endpoint.",
   "Category": "Media",
   "CreatedBy": "gaps",
   "CanContainContent": false,
